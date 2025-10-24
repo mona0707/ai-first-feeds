@@ -1,0 +1,7 @@
+body { font-family: system-ui, sans-serif; margin: 24px; }
+header { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+#list { margin-top: 16px; display: grid; gap: 12px; }
+.card { border: 1px solid #ddd; border-radius: 8px; padding: 12px; }
+.card h3 { margin: 0 0 8px; font-size: 1rem; }
+.meta { font-size: .85rem; color: #666; display: flex; gap: 8px; flex-wrap: wrap; }
+.summary { margin-top: 8px; color: #333; }
