@@ -1,0 +1,10 @@
+{
+  "name": "ai-first-feeds",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "scripts": { "aggregate": "node scripts/aggregate.mjs" },
+  "dependencies": {
+    "rss-parser": "^3.13.0"
+  }
+}
