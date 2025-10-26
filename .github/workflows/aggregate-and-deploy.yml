@@ -15,14 +15,15 @@ jobs:
         with:
           node-version: 20
 
-      - run: npm ci
+      - run: npm install
       - run: npm run aggregate
 
-      - name: FTP Deploy
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: public
-          server-dir: ${{ secrets.FTP_DIR }}
+             - name: FTP Deploy
+          uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+          with:
+            server: ${{ secrets.FTP_SERVER }}
+            username: ${{ secrets.FTP_USERNAME }}
+            password: ${{ secrets.FTP_PASSWORD }}
+            local-dir: public
+            server-dir: ${{ secrets.FTP_DIR }}
+       
